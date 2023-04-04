@@ -33,3 +33,24 @@ github-deprecation-finder find-all
 
 ## Help
 Please run `github-deprecation-finder --help` to see all the commands and options.
+
+
+## Configuring
+
+You can edit the `config.ini` or use the `--config-file` option to select your own.
+
+This is the format for the file
+```ini
+[actions]
+deprecated = actions/checkout@v2,deprecated-action-2
+
+[commands]
+list = set-output,another-command-to-find
+```
+
+## Debug:
+
+```
+github-deprecation-finder -l DEBUG find "infra-splat"
+```
+This uses the `logging` package.
