@@ -15,7 +15,7 @@ Please ensure you have the following ENVVARS set:
 # Your PAT Token with Full Repo Access
 export GH_ACCESS_TOKEN="ghp_xxxxxxxxxxxxxxx"
 # Your GH Org name
-export GH_ORG="my_org"
+export GH_ORG_NAME="my_org"
 ```
 
 You can set them via options on the commands, but for best practice they should be set in your ENV.
